@@ -56,6 +56,10 @@ option within PrestaShop's General Preferences section to enable this ability.
 file, in order for the 'parse_str' operation within the module to work correctly.
 
 
+NOTE: The module assumes currency will be USD and only appears when the cart's currency matches.
+If your cart is set to another currency, change the 3 character currency code that's hard coded
+at the top of the 'hookPayment' function, within the module's 'plugnpayapi.php' script.
+
 Also realize that this code itself is not very complex.  Practically every person that has
 contacted us about errors found that some other code not associated with this contribution was
 responsible, or because their CURL implementation was not properly set up or working.
@@ -79,4 +83,9 @@ Updates:
 - additional CURL adjustments
 - cleaned up some code & images 
 - fixed issue with some billing address & phone fields not being sent to gateway.
+
+04/19/23
+- adjusted format the card's exp date is sent to PnP
+- added note to README about currency type matching requirement
+
 
