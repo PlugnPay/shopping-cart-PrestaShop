@@ -88,4 +88,6 @@ Updates:
 - adjusted format the card's exp date is sent to PnP
 - added note to README about currency type matching requirement
 
+08/04/2023
+- fast adjustment to allow exp date to extend to 2025
 
